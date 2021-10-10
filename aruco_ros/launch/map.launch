@@ -5,7 +5,7 @@
   <arg name="camera_namespace" default="camera1"/>
   <arg name="camera_frame" default="camera_link"/>
   <arg name="marker_map_frame" default="aruco_map"/>
-  <arg name="world_fixed_frame" default="map"/>
+  <arg name="world_fixed_frame" default="world_frame"/>
   <arg name="visualize" default="true"/>
 
   <group ns="$(arg camera_namespace)">
@@ -20,7 +20,6 @@
       <param name="draw_map_axis" type="bool" value="true"/>
       <param name="image_is_rectified" value="true"/>
       <param name="camera_frame" value="$(arg camera_frame)"/>
-      <param name="camera_namespace" value="$(arg camera_namespace)"/>
       <param name="marker_map_frame" type="string" value="$(arg marker_map_frame)"/>
       <param name="world_fixed_frame" type="string" value="$(arg world_fixed_frame)"/>
       <param name="corner_refinement" value="CORNER_SUBPIX"/>
