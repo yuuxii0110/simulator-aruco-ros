@@ -39,6 +39,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 int
 main(int argc, char **argv)
 {
+  std::string camera_name;
   ros::init(argc, argv, "image_filtering_for_aruco");
   ros::NodeHandle nh("~");
 
@@ -50,8 +51,7 @@ main(int argc, char **argv)
 
   // Subscriber for image
   image_transport::Subscriber subVideo;
-  subVideo=it.subscribe("camera/image_raw",1,&image_filtering_for_aruco::Filter::ImageCallback,&filter);
-
+  subVideo=it.subscribe("image_raw",1,&image_filtering_for_aruco::Filter::ImageCallback,&filter);
   ros::spin();
 
   return EXIT_SUCCESS;

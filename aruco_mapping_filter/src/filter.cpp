@@ -45,13 +45,12 @@ Filter::Filter(ros::NodeHandle* nh, image_transport::ImageTransport *it_nh)
 {
   nh->param<int>("window_size", window_size);
   nh->param<int>("subtraction_const", subtraction_const);
-  
   // Minimum window size for adaptive thresholding is 3.
   if (window_size < 3)
     window_size = 3;
    
   // Filtered image publisher
-  filtered_image_pub = it_nh->advertise("camera/image_raw_filtered",1);
+  filtered_image_pub = it_nh->advertise("image_raw_filtered",1);
   
 }
 

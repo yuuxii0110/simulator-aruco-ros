@@ -90,7 +90,6 @@ public:
     bool use_enclosed;
     nh.param<std::string>("corner_refinement", refinementMethod, "CORNER_LINES");
     nh.param<bool>("use_enclosed", use_enclosed, false);
-
     mParams.getCornerRefinementMethodFromString(refinementMethod);
     mParams.detectEnclosedMarkers(use_enclosed);
 
@@ -123,13 +122,15 @@ public:
 
     try {
       mapConfig.readFromFile(map_config_file);
+      ROS_ERROR("[%s] READ SUCCESSFULLY...........'%s'", LOG_NAME, map_config_file.c_str());
     } catch (std::exception & exp) {
-      ROS_ERROR("[%s] Could not read '%s'", LOG_NAME, map_config_file.c_str());
+      ROS_ERROR("[%s] Could not read '%s'...................................", LOG_NAME, map_config_file.c_str());
       exit(1);
     }
 
     mDetector.setDictionary(mapConfig.getDictionary());
 
+    ROS_INFO("Checking Frame of [%s], [%s] and [%s] ....................", camera_frame, marker_map_frame, world_fixed_frame);
     ROS_ASSERT(!camera_frame.empty() && !marker_map_frame.empty() && !world_fixed_frame.empty());
 
     ROS_INFO("[%s] Started with marker size of %f m and marker map to track: %s",
