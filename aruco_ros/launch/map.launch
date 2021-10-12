@@ -23,7 +23,7 @@
       <param name="marker_map_frame" type="string" value="$(arg marker_map_frame)"/>
       <param name="world_fixed_frame" type="string" value="$(arg world_fixed_frame)"/>
       <param name="corner_refinement" value="CORNER_SUBPIX"/>
-      <param name="publish_tf" value="true"/>
+      <param name="publish_tf" value="false"/>
     </node>
 
     <!-- Visualization -->

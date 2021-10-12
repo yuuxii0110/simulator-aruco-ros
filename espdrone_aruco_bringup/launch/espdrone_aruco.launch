@@ -5,10 +5,9 @@
   <arg name="drone_index" default="0"/>
   <arg name="visualize_output" default="true"/>
   <arg name="aruco_marker_size" default="0.1778"/>
-  <arg name="aruco_map_config_file" default="$(find espdrone_aruco_bringup)/config/environment/gazebo.yml"/>
+  <arg name="aruco_map_config_file" default="$(find espdrone_aruco_bringup)/environment/gazebo.yml"/>
   <arg name="marker_map_frame" default="aruco_map"/>
   <arg name="world_fixed_frame" default="world_frame"/>
-
   
   <group ns="camera1">
     <node pkg="image_proc" type="image_proc" name="image_proc" output="screen"/>

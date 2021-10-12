@@ -122,7 +122,7 @@ public:
 
     try {
       mapConfig.readFromFile(map_config_file);
-      ROS_ERROR("[%s] READ SUCCESSFULLY...........'%s'", LOG_NAME, map_config_file.c_str());
+      ROS_INFO("[%s] READ SUCCESSFULLY...........'%s'", LOG_NAME, map_config_file.c_str());
     } catch (std::exception & exp) {
       ROS_ERROR("[%s] Could not read '%s'...................................", LOG_NAME, map_config_file.c_str());
       exit(1);
@@ -130,13 +130,13 @@ public:
 
     mDetector.setDictionary(mapConfig.getDictionary());
 
-    ROS_INFO("Checking Frame of [%s], [%s] and [%s] ....................", camera_frame, marker_map_frame, world_fixed_frame);
+    ROS_INFO("Checking Frame of [%s], [%s] and [%s] ....................", camera_frame.c_str(), marker_map_frame.c_str(), world_fixed_frame.c_str());
     ROS_ASSERT(!camera_frame.empty() && !marker_map_frame.empty() && !world_fixed_frame.empty());
 
     ROS_INFO("[%s] Started with marker size of %f m and marker map to track: %s",
              LOG_NAME, marker_size, map_config_file.c_str());
     ROS_INFO("[%s] Will publish camera TF with '%s' as parent and '%s' as child",
-             LOG_NAME, marker_map_frame.c_str(), camera_frame.c_str());
+             LOG_NAME, marker_map_frame.c_str(), camera_frame.c_str());s
 
     dyn_rec_server.setCallback(boost::bind(&ArucoMap::reconf_callback, this, _1, _2));
   }
