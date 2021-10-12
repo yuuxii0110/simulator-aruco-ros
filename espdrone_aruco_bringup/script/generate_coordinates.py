@@ -1,27 +1,14 @@
 '''
-this script is to generate four corner's coordinates for each aruco markers with respect to aruco_map
-input: {'id:x':[x,y,z,roll,pitch,yaw]} of the center of a marker
-output: coordinates of corners of all aruco markers 
+need to double check the result, especially for those that rotated >= 180 deg,
+for example: 
+the pose of [-2.5, -0.5, 0.5, 0, -1.57, 3.14] & [-2.5, -0.5, 0.5, 3.14, -1.57, 0] will result the same orientation in gazebo,
+but the corners output is:
+[[-2.5002123801990743, -0.5888997745011922, 0.5888999718126401], [-2.499929206510523, -0.41110000000003577, 0.5888999718126401], [-2.4997876198009257, -0.4111002254988077, 0.4111000281873599], [-2.500070793489477, -0.5888999999999642, 0.4111000281873599]] }
+[[-2.4999292065554157, -0.4111, 0.5888999718126401], [-2.4999292065554157, -0.5889, 0.5888999718126401], [-2.5000707934445843, -0.5889, 0.4111000281873599], [-2.5000707934445843, -0.4111, 0.4111000281873599]] }
+respectively,
+but the correct answer is the first answer...
 
-ERROR CAUTIONS:
-
-1)
-    need to double check the result, especially for those that rotated >= 180 deg,
-    for example: 
-    the pose of 
-        1) [-2.5, -0.5, 0.5, 0, -1.57, 3.14] & 
-        2) [-2.5, -0.5, 0.5, 3.14, -1.57, 0] 
-        
-    will show the same orientation and position in gazebo,
-    
-    the output for above are:
-        1) [[-2.5002123801990743, -0.5888997745011922, 0.5888999718126401], [-2.499929206510523, -0.41110000000003577, 0.5888999718126401], [-2.4997876198009257, -0.4111002254988077, 0.4111000281873599], [-2.500070793489477, -0.5888999999999642, 0.4111000281873599]] }
-        2) [[-2.4999292065554157, -0.4111, 0.5888999718126401], [-2.4999292065554157, -0.5889, 0.5888999718126401], [-2.5000707934445843, -0.5889, 0.4111000281873599], [-2.5000707934445843, -0.4111, 0.4111000281873599]] }
-    respectively,
-    but the correct answer is the first answer...
-    
-2)
-    when copy to yml file, keep the format exactly the same, even a extra empty line or tap might causing error when loading the yml file.
+note: when copy to yml file, keep the format exactly the same, even a extra empty line or tap might causing error when loading the yml file.
 '''
 
 
