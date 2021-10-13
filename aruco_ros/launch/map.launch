@@ -7,6 +7,7 @@
   <arg name="marker_map_frame" default="aruco_map"/>
   <arg name="world_fixed_frame" default="world_frame"/>
   <arg name="visualize" default="true"/>
+  <arg name="drone_index" default="0"/>
 
   <group ns="$(arg camera_namespace)">
     <node pkg="aruco_ros" type="map_single" name="aruco_map_pose_tracker" output="screen">
@@ -26,8 +27,28 @@
       <param name="publish_tf" value="false"/>
     </node>
 
+    <node name="publish_odom" pkg="espdrone_driver" type="publish_odom.py">
+        <param name="index" value= "$(arg drone_index)"/>
+        <remap from="/vo" to="vo"/>
+        <remap from="/pose" to="aruco_map_pose_tracker/pose"/>
+    </node>
+
+    <node pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf">
+      <param name="output_frame" value="odom_$(arg drone_index)"/>
+      <param name="freq" value="10.0"/>
+      <param name="sensor_timeout" value="5.0"/>
+      <param name="odom_used" value="false"/>
+      <param name="imu_used" value="true"/>
+      <param name="vo_used" value="true"/>
+      <param name="debug" value="false"/>
+      <param name="self_diagnose" value="false"/>
+      <remap from="/vo" to="vo"/>
+      <remap from="/imu_data" to="/drone$(arg drone_index)/imu"/>
+      <remap from="/base_footprint" to="/base_footprint_$(arg drone_index)"/>
+    </node>
+
     <!-- Visualization -->
-    <node pkg="image_view" type="image_view" name="image_view" if="$(arg visualize)">
+    <node pkg="image_view" type="image_view" name="image_view" if="$(arg visualize)" output="screen">
       <remap from="image" to="aruco_map_pose_tracker/result"/>
     </node>
 

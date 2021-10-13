@@ -29,6 +29,7 @@
     <arg name="visualize" value="$(arg visualize_output)"/>
     <arg name="marker_map_frame" value="$(arg marker_map_frame)"/>
     <arg name="world_fixed_frame" value="$(arg world_fixed_frame)"/>
+    <arg name="drone_index" value="$(arg drone_index)"/>
   </include>
 
 </launch>
