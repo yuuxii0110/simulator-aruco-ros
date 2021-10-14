@@ -2,9 +2,7 @@
 this script is to generate four corner's coordinates for each aruco markers with respect to aruco_map
 input: {'id:x':[x,y,z,roll,pitch,yaw]} of the center of a marker
 output: coordinates of corners of all aruco markers 
-
 ERROR CAUTIONS:
-
 1)
     need to double check the result, especially for those that rotated >= 180 deg,
     for example: 
@@ -29,6 +27,9 @@ import numpy as np
 from math import sin, cos, pi
 
 marker_size = 0.1778
+rotating_matrix = np.array([[1, 0, 0],
+                            [0, 0, 1],
+                            [0, -1,  0]])
 
 #[x,y,z,roll,pitch,yaw], can get from aruco_world.world file/ manually key in 
 
@@ -42,10 +43,12 @@ location = {'id:0': [1.5 ,1.5, 1, -0, -1.57, 1.57],
             'id:7':[2.5, -0.5, 0.5, 0, -1.57, 0]} 
 
 result = {e:[] for e in location.keys()}
+rotated_result = {e:[] for e in location.keys()}
 
 R = marker_size/2
 for key,value in location.items():
     tmp=[]
+    tmp2=[]
     origin = np.array(value[0:3])
     roll = value[3]
     pitch = value[4]
@@ -73,16 +76,30 @@ for key,value in location.items():
 
     for C in corners:
         delta_distance = np.matmul(R_total,C)
-        tmp.append(list(delta_distance + origin))
+        cor = delta_distance + origin
+        tmp.append(list(cor))
+        rotated = np.matmul(rotating_matrix,delta_distance + origin)
+        tmp2.append(list(rotated))
 
     result[key] = tmp
+    rotated_result[key] = tmp2
 
-
-
+print(" ")
+print("coordinate in gazebo: ")
+print("__________________________________________________for debugging______________________________________________________________")
 for i in result.items():
     id = list(i)[0]
     lst = list(i)[1]
     chr1 = "{ "
     chr2 = " }"
-    print(f"- {chr1}{id}, corners: {lst}{chr2}")
- 
+    print(f"    - {chr1}{id}, corners: {lst}{chr2}")
+print(" ")
+
+print("coordinate after rotating: ")
+print("__________________________________________________copy below to yml file______________________________________________________________")
+for i in rotated_result.items():
+    id = list(i)[0]
+    lst = list(i)[1]
+    chr1 = "{ "
+    chr2 = " }"
+    print(f"    - {chr1}{id}, corners: {lst}{chr2}")
