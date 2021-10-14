@@ -24,7 +24,8 @@
       <param name="marker_map_frame" type="string" value="$(arg marker_map_frame)"/>
       <param name="world_fixed_frame" type="string" value="$(arg world_fixed_frame)"/>
       <param name="corner_refinement" value="CORNER_SUBPIX"/>
-      <param name="publish_tf" value="false"/>
+      <param name="publish_tf" value="true"/>
+      <param name="rotate_marker_axis" value="true"/>
     </node>
 
     <node name="publish_odom" pkg="espdrone_driver" type="publish_odom.py">
@@ -44,13 +45,17 @@
       <param name="self_diagnose" value="false"/>
       <remap from="/vo" to="vo"/>
       <remap from="/imu_data" to="/drone$(arg drone_index)/imu"/>
-      <remap from="/base_footprint" to="/base_footprint_$(arg drone_index)"/>
+    </node>
+
+    <node name="tf_odom_publisher" pkg="espdrone_driver" type="tf_broadcaster_imu.py" output="screen">
+      <param name="index" value="$(arg drone_index)"/>
+      <remap from="/odom" to="robot_pose_ekf/odom_combined"/>
     </node>
 
     <!-- Visualization -->
-    <node pkg="image_view" type="image_view" name="image_view" if="$(arg visualize)" output="screen">
+    <!--node pkg="image_view" type="image_view" name="image_view" if="$(arg visualize)" output="screen">
       <remap from="image" to="aruco_map_pose_tracker/result"/>
-    </node>
+    </node-->
 
   </group>
 </launch>

@@ -136,7 +136,7 @@ public:
     ROS_INFO("[%s] Started with marker size of %f m and marker map to track: %s",
              LOG_NAME, marker_size, map_config_file.c_str());
     ROS_INFO("[%s] Will publish camera TF with '%s' as parent and '%s' as child",
-             LOG_NAME, marker_map_frame.c_str(), camera_frame.c_str());s
+             LOG_NAME, marker_map_frame.c_str(), camera_frame.c_str());
 
     dyn_rec_server.setCallback(boost::bind(&ArucoMap::reconf_callback, this, _1, _2));
   }
