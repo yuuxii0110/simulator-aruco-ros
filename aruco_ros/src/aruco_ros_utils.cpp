@@ -69,10 +69,10 @@ tf2::Transform aruco_ros::markerPose2Tf(const cv::Mat & Rvec,
 
   // Rotate axis direction as to fit ROS (?)
   if (rotate_marker_axis) {
-    double data[9] = {1,0,0,0,0,1,0,-1,0};
+    double data[9] = {-1,0,0,0,0,1,0,1,0};
     cv::Mat rotate_to_ros(3, 3, CV_64FC1, data);
     // -1 0 0
-    //  0 0 1-1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, -1.0, 0.0
+    //  0 0 1 -1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, -1.0, 0.0
     //  0 1 0
     rot = rot * rotate_to_ros.t();
   }

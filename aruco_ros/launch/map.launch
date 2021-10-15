@@ -20,12 +20,12 @@
       <param name="draw_markers_axis" type="bool" value="true"/>
       <param name="draw_map_axis" type="bool" value="true"/>
       <param name="image_is_rectified" value="true"/>
-      <param name="camera_frame" value="$(arg camera_frame)"/>
+      <param name="camera_frame" value="base_link_$(arg drone_index)"/>
       <param name="marker_map_frame" type="string" value="$(arg marker_map_frame)"/>
       <param name="world_fixed_frame" type="string" value="$(arg world_fixed_frame)"/>
       <param name="corner_refinement" value="CORNER_SUBPIX"/>
       <param name="publish_tf" value="true"/>
-      <param name="rotate_marker_axis" value="true"/>
+      <param name="rotate_marker_axis" value="false"/>
     </node>
 
     <node name="publish_odom" pkg="espdrone_driver" type="publish_odom.py">
@@ -47,10 +47,10 @@
       <remap from="/imu_data" to="/drone$(arg drone_index)/imu"/>
     </node>
 
-    <node name="tf_odom_publisher" pkg="espdrone_driver" type="tf_broadcaster_imu.py" output="screen">
+    <!--node name="tf_odom_publisher" pkg="espdrone_driver" type="tf_broadcaster_imu.py" output="screen">
       <param name="index" value="$(arg drone_index)"/>
       <remap from="/odom" to="robot_pose_ekf/odom_combined"/>
-    </node>
+    </node-->
 
     <!-- Visualization -->
     <!--node pkg="image_view" type="image_view" name="image_view" if="$(arg visualize)" output="screen">

@@ -178,7 +178,7 @@ public:
 
           tf2::Transform transform = aruco_ros::arucoMarkerMap2Tf(mapPoseTracker, rotate_marker_axis_);  // Get transform from camera frame to marker map frame.
           transform = transform.inverse();  // We need the transform from marker map frame to camera frame, not vice versa.
-
+          
           geometry_msgs::TransformStamped stampedTransform;
           stampedTransform.header.stamp = curr_stamp;
           stampedTransform.header.frame_id = marker_map_frame;
