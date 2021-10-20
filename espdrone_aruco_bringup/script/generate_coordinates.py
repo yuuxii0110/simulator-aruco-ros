@@ -54,6 +54,14 @@ for key,value in location.items():
     pitch = value[4]
     yaw = value[5]
 
+    '''
+    C1---------C2
+     |         |
+     |         |
+     |         |
+    C4---------C3         
+
+    '''
     C1 = np.array([R,R,0])
     C2 = np.array([R,-R,0])
     C3 = np.array([-R,-R,0])
