@@ -1094,10 +1094,10 @@
       <pose>1.70199 -1.78543 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>790 126000000</sim_time>
-      <real_time>389 535576720</real_time>
-      <wall_time>1634293520 204324253</wall_time>
-      <iterations>387009</iterations>
+      <sim_time>807 945000000</sim_time>
+      <real_time>34 393150506</real_time>
+      <wall_time>1634704393 689083587</wall_time>
+      <iterations>17819</iterations>
       <model name='aruco_visual_marker_0'>
         <pose>1.5 -1.5 1 -0.000398 -1.57 0</pose>
         <scale>1 1 1</scale>
@@ -1226,6 +1226,74 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='drone1'>
+        <pose>-0.500662 -0.008593 0.02341 0.000183 0.000191 -0.029305</pose>
+        <scale>1 1 1</scale>
+        <link name='BL_link_1'>
+          <pose>-0.522426 0.015358 0.017686 0.000177 0.000191 -0.048799</pose>
+          <velocity>0.002212 -0.003317 0.008883 0.188546 0.126757 -1.5e-05</velocity>
+          <acceleration>-4.37802 -3.82743 -0.833954 -2.60189 -0.82268 -2.92437</acceleration>
+          <wrench>-0.000748 -0.000654 -0.000142 0 -0 0</wrench>
+        </link>
+        <link name='BR_link_1'>
+          <pose>-0.523792 -0.031214 0.017657 0.000179 0.000189 -0.037577</pose>
+          <velocity>0.002217 -0.003312 0.000275 0.188547 0.12675 -1.5e-05</velocity>
+          <acceleration>-4.37324 -3.83087 -9.63152 -2.5901 -0.818574 -2.92406</acceleration>
+          <wrench>-0.00079 -0.000692 -0.00174 0 -0 0</wrench>
+        </link>
+        <link name='FL_link_1'>
+          <pose>-0.477521 0.014041 0.017873 0.000176 0.000192 -0.055424</pose>
+          <velocity>0.00223 -0.003345 0.002944 0.188554 0.126752 -1.5e-05</velocity>
+          <acceleration>-4.44151 -3.85655 8.33989 -2.57699 -0.8269 -2.92404</acceleration>
+          <wrench>-0.000802 -0.000697 0.001506 0 -0 0</wrench>
+        </link>
+        <link name='FR_link_1'>
+          <pose>-0.478886 -0.032531 0.018017 0.000193 0.000174 0.0417</pose>
+          <velocity>0.002257 -0.003372 -0.005665 0.188556 0.126747 -1.5e-05</velocity>
+          <acceleration>-4.4577 -3.87825 -0.457353 -2.56429 -0.819715 -2.92201</acceleration>
+          <wrench>-0.000761 -0.000662 -7.8e-05 0 -0 0</wrench>
+        </link>
+        <link name='base_link_1'>
+          <pose>-0.500662 -0.008593 0.02341 0.000183 0.000191 -0.029305</pose>
+          <velocity>0.002946 -0.004399 0.00161 0.187903 0.125863 -9e-06</velocity>
+          <acceleration>-2.70852 -2.35695 -0.664451 -2.37851 -0.987554 -3.0975</acceleration>
+          <wrench>-0.069107 -0.060137 -0.016953 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='drone2'>
+        <pose>-1.00067 -0.00858 0.023399 -0.00047 9e-06 -0.029178</pose>
+        <scale>1 1 1</scale>
+        <link name='BL_link_2'>
+          <pose>-1.02243 0.015365 0.017655 -0.00048 -4e-06 -0.048941</pose>
+          <velocity>0.0044 0.009681 -0.01554 -0.546031 0.251689 -0.000365</velocity>
+          <acceleration>10.0712 9.41091 -1.36248 -1.56332 0.575079 2.72542</acceleration>
+          <wrench>0.00172 0.001607 -0.000233 0 -0 0</wrench>
+        </link>
+        <link name='BR_link_2'>
+          <pose>-1.02379 -0.031207 0.017658 -0.00048 1e-06 -0.037719</pose>
+          <velocity>0.004469 0.009667 0.010217 -0.546015 0.2518 -0.000366</velocity>
+          <acceleration>10.038 9.41763 20.2902 -1.60719 0.616624 2.718</acceleration>
+          <wrench>0.001813 0.001701 0.003665 0 -0 0</wrench>
+        </link>
+        <link name='FL_link_2'>
+          <pose>-0.977529 0.014054 0.017851 -0.00048 -7e-06 -0.055565</pose>
+          <velocity>0.004452 0.009868 -0.026139 -0.546112 0.251717 -0.000366</velocity>
+          <acceleration>10.1841 9.48428 -22.3256 -1.57922 0.591404 2.72348</acceleration>
+          <wrench>0.001839 0.001713 -0.004032 0 -0 0</wrench>
+        </link>
+        <link name='FR_link_2'>
+          <pose>-0.978888 -0.032518 0.018025 -0.000478 3.9e-05 0.041556</pose>
+          <velocity>0.004565 0.009947 -0.000381 -0.546126 0.251777 -0.000366</velocity>
+          <acceleration>10.1988 9.53605 -0.673953 -1.6086 0.620221 2.71639</acceleration>
+          <wrench>0.001742 0.001628 -0.000115 0 -0 0</wrench>
+        </link>
+        <link name='base_link_2'>
+          <pose>-1.00067 -0.00858 0.023399 -0.00047 9e-06 -0.029178</pose>
+          <velocity>0.005884 0.012835 -0.007955 -0.54851 0.250919 -0.000382</velocity>
+          <acceleration>6.20782 5.79833 -0.97095 -1.07885 0.286209 2.76005</acceleration>
+          <wrench>0.158391 0.147943 -0.024774 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -1247,5 +1315,1349 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
+    <model name='drone2'>
+      <link name='base_link_2'>
+        <inertial>
+          <pose>-8.8e-05 -3e-06 -0.010505 0 -0 0</pose>
+          <mass>0.0255148</mass>
+          <inertia>
+            <ixx>6.17281e-06</ixx>
+            <ixy>4.66738e-10</ixy>
+            <ixz>3.57375e-08</ixz>
+            <iyy>6.29242e-06</iyy>
+            <iyz>-7.10148e-10</iyz>
+            <izz>1.10885e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='base_link_2_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/base_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_link_2_fixed_joint_lump__camera_link_2_collision_1'>
+          <pose>0.019443 0 -0.010256 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/camera_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_link_2_fixed_joint_lump__pcb_link_2_collision_2'>
+          <pose>0.017473 -0.005236 -0.007754 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/pcb_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_link_2_fixed_joint_lump__pcb_plate_link_2_collision_3'>
+          <pose>0.017473 -0.005236 -0.007754 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/pcb_plate_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='base_link_2_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/base_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/White</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_link_2_fixed_joint_lump__camera_link_2_visual_1'>
+          <pose>0.019443 0 -0.010256 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/camera_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_link_2_fixed_joint_lump__pcb_link_2_visual_2'>
+          <pose>0.017473 -0.005236 -0.007754 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/pcb_link_visual.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Yellow</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_link_2_fixed_joint_lump__pcb_plate_link_2_visual_3'>
+          <pose>0.017473 -0.005236 -0.007754 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/pcb_plate_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Blue</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <velocity_decay/>
+        <sensor name='camera1' type='camera'>
+          <update_rate>20</update_rate>
+          <camera name='head'>
+            <horizontal_fov>1.39626</horizontal_fov>
+            <image>
+              <width>800</width>
+              <height>800</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.02</near>
+              <far>300</far>
+            </clip>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.007</stddev>
+            </noise>
+          </camera>
+          <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>0.0</updateRate>
+            <cameraName>camera1</cameraName>
+            <imageTopicName>image_raw</imageTopicName>
+            <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+            <frameName>camera_link</frameName>
+            <hackBaseline>0.07</hackBaseline>
+            <distortionK1>0.0</distortionK1>
+            <distortionK2>0.0</distortionK2>
+            <distortionK3>0.0</distortionK3>
+            <distortionT1>0.0</distortionT1>
+            <distortionT2>0.0</distortionT2>
+            <robotNamespace>/drone2/</robotNamespace>
+          </plugin>
+          <pose>0.019443 0 -0.010256 0 -0 0</pose>
+        </sensor>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <sensor name='imu_sensor' type='imu'>
+          <always_on>1</always_on>
+          <update_rate>100</update_rate>
+          <visualize>1</visualize>
+          <topic>__default_topic__</topic>
+          <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+            <topicName>imu</topicName>
+            <bodyName>pcb_plate_link</bodyName>
+            <updateRateHZ>10.0</updateRateHZ>
+            <gaussianNoise>0.0</gaussianNoise>
+            <xyzOffset>0 0 0</xyzOffset>
+            <rpyOffset>0 0 0</rpyOffset>
+            <frameName>imu_link</frameName>
+            <initialOrientationAsReference>0</initialOrientationAsReference>
+            <robotNamespace>/drone2/</robotNamespace>
+          </plugin>
+          <pose>0.017473 -0.005236 -0.007754 0 -0 0</pose>
+          <imu/>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='BL_joint_2' type='revolute'>
+        <pose relative_to='base_link_2'>-0.022456 0.023302 -0.005733 0 -0 0</pose>
+        <parent>base_link_2</parent>
+        <child>BL_link_2</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+        <physics>
+          <provide_feedback>1</provide_feedback>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <provide_feedback>1</provide_feedback>
+          </ode>
+        </physics>
+      </joint>
+      <link name='BL_link_2'>
+        <pose relative_to='BL_joint_2'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>2e-06 -1e-06 0.003236 0 -0 0</pose>
+          <mass>0.00017076</mass>
+          <inertia>
+            <ixx>4.6765e-09</ixx>
+            <ixy>2.1871e-12</ixy>
+            <ixz>2.0463e-13</ixz>
+            <iyy>4.6749e-09</iyy>
+            <iyz>1.2035e-12</iyz>
+            <izz>7.4744e-09</izz>
+          </inertia>
+        </inertial>
+        <collision name='BL_link_2_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/BL_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='BL_link_2_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/BL_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='BR_joint_2' type='revolute'>
+        <pose relative_to='base_link_2'>-0.022456 -0.02329 -0.005753 0 -0 0</pose>
+        <parent>base_link_2</parent>
+        <child>BR_link_2</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+        <physics>
+          <provide_feedback>1</provide_feedback>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <provide_feedback>1</provide_feedback>
+          </ode>
+        </physics>
+      </joint>
+      <link name='BR_link_2'>
+        <pose relative_to='BR_joint_2'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0 -0 0.003272 0 -0 0</pose>
+          <mass>0.00018062</mass>
+          <inertia>
+            <ixx>5.31752e-09</ixx>
+            <ixy>-9.13134e-15</ixy>
+            <ixz>8.05002e-16</ixz>
+            <iyy>5.31755e-09</iyy>
+            <iyz>1.22536e-14</iyz>
+            <izz>8.76726e-09</izz>
+          </inertia>
+        </inertial>
+        <collision name='BR_link_2_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/BR_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='BR_link_2_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/BR_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Green</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='FL_joint_2' type='revolute'>
+        <pose relative_to='base_link_2'>0.022469 0.023302 -0.005537 0 -0 0</pose>
+        <parent>base_link_2</parent>
+        <child>FL_link_2</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+        <physics>
+          <provide_feedback>1</provide_feedback>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <provide_feedback>1</provide_feedback>
+          </ode>
+        </physics>
+      </joint>
+      <link name='FL_link_2'>
+        <pose relative_to='FL_joint_2'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0 -0 0.003272 0 -0 0</pose>
+          <mass>0.00018062</mass>
+          <inertia>
+            <ixx>5.31748e-09</ixx>
+            <ixy>-9.62023e-15</ixy>
+            <ixz>-5.75246e-15</ixz>
+            <iyy>5.31752e-09</iyy>
+            <iyz>1.16455e-14</iyz>
+            <izz>8.7672e-09</izz>
+          </inertia>
+        </inertial>
+        <collision name='FL_link_2_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/FL_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='FL_link_2_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/FL_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Green</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='FR_joint_2' type='revolute'>
+        <pose relative_to='base_link_2'>0.022469 -0.02329 -0.005385 0 -0 0.079117</pose>
+        <parent>base_link_2</parent>
+        <child>FR_link_2</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+        <physics>
+          <provide_feedback>1</provide_feedback>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <provide_feedback>1</provide_feedback>
+          </ode>
+        </physics>
+      </joint>
+      <link name='FR_link_2'>
+        <pose relative_to='FR_joint_2'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>2e-06 -1e-06 0.003236 0 -0 0</pose>
+          <mass>0.000170762</mass>
+          <inertia>
+            <ixx>4.67644e-09</ixx>
+            <ixy>2.19394e-12</ixy>
+            <ixz>2.02296e-13</ixz>
+            <iyy>4.67485e-09</iyy>
+            <iyz>1.20317e-12</iyz>
+            <izz>7.47437e-09</izz>
+          </inertia>
+        </inertial>
+        <collision name='FR_link_2_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/FR_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='FR_link_2_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/FR_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <plugin name='imu_plugin' filename='libgazebo_ros_imu.so'>
+        <alwaysOn>1</alwaysOn>
+        <bodyName>imu</bodyName>
+        <topicName>espdrone_imu</topicName>
+        <serviceName>imu_service</serviceName>
+        <gaussianNoise>0.0</gaussianNoise>
+        <updateRate>20.0</updateRate>
+        <robotNamespace>/drone2/</robotNamespace>
+      </plugin>
+      <plugin name='FL_lift_2' filename='libLiftDragPlugin.so'>
+        <a0>0.1</a0>
+        <cla>0.1</cla>
+        <cda>0.01</cda>
+        <cma>0.0</cma>
+        <alpha_stall>0.2</alpha_stall>
+        <cla_stall>-0.2</cla_stall>
+        <cda_stall>1.0</cda_stall>
+        <cma_stall>0.0</cma_stall>
+        <cp>0 0.5 0</cp>
+        <area>1e-3</area>
+        <air_density>1.2041</air_density>
+        <forward>1 0 0</forward>
+        <upward>0 0 1</upward>
+        <link_name>FL_link_2</link_name>
+        <control_joint>FL_joint_2</control_joint>
+        <robotNamespace>/drone2/</robotNamespace>
+      </plugin>
+      <plugin name='FR_lift_2' filename='libLiftDragPlugin.so'>
+        <a0>0.1</a0>
+        <cla>0.1</cla>
+        <cda>0.01</cda>
+        <cma>0.0</cma>
+        <alpha_stall>0.2</alpha_stall>
+        <cla_stall>-0.2</cla_stall>
+        <cda_stall>1.0</cda_stall>
+        <cma_stall>0.0</cma_stall>
+        <cp>0 0.5 0</cp>
+        <area>1e-3</area>
+        <air_density>1.2041</air_density>
+        <forward>1 0 0</forward>
+        <upward>0 0 -1</upward>
+        <link_name>FR_link_2</link_name>
+        <control_joint>FR_joint_2</control_joint>
+        <robotNamespace>/drone2/</robotNamespace>
+      </plugin>
+      <plugin name='BL_lift_2' filename='libLiftDragPlugin.so'>
+        <a0>0.1</a0>
+        <cla>0.1</cla>
+        <cda>0.01</cda>
+        <cma>0.0</cma>
+        <alpha_stall>0.2</alpha_stall>
+        <cla_stall>-0.2</cla_stall>
+        <cda_stall>1.0</cda_stall>
+        <cma_stall>0.0</cma_stall>
+        <cp>0 0.5 0</cp>
+        <area>1e-3</area>
+        <air_density>1.2041</air_density>
+        <forward>1 0 0</forward>
+        <upward>0 0 1</upward>
+        <link_name>BL_link_2</link_name>
+        <control_joint>BL_joint_2</control_joint>
+        <robotNamespace>/drone2/</robotNamespace>
+      </plugin>
+      <plugin name='BR_lift_2' filename='libLiftDragPlugin.so'>
+        <a0>0.1</a0>
+        <cla>0.1</cla>
+        <cda>0.01</cda>
+        <cma>0.0</cma>
+        <alpha_stall>0.2</alpha_stall>
+        <cla_stall>-0.2</cla_stall>
+        <cda_stall>1.0</cda_stall>
+        <cma_stall>0.0</cma_stall>
+        <cp>0 0.5 0</cp>
+        <area>1e-3</area>
+        <air_density>1.2041</air_density>
+        <forward>1 0 0</forward>
+        <upward>0 0 1</upward>
+        <link_name>BR_link_2</link_name>
+        <control_joint>BR_joint_2</control_joint>
+        <robotNamespace>/drone2/</robotNamespace>
+      </plugin>
+      <plugin name='ft_sensor' filename='libgazebo_ros_ft_sensor.so'>
+        <updateRate>10.0</updateRate>
+        <topicName>BR_joint_sensor</topicName>
+        <jointName>BR_joint_2</jointName>
+        <robotNamespace>/drone2/</robotNamespace>
+      </plugin>
+      <plugin name='ft_sensor' filename='libgazebo_ros_ft_sensor.so'>
+        <updateRate>10.0</updateRate>
+        <topicName>BL_joint_sensor</topicName>
+        <jointName>BL_joint_2</jointName>
+        <robotNamespace>/drone2/</robotNamespace>
+      </plugin>
+      <plugin name='ft_sensor' filename='libgazebo_ros_ft_sensor.so'>
+        <updateRate>10.0</updateRate>
+        <topicName>FR_joint_sensor</topicName>
+        <jointName>FR_joint_2</jointName>
+        <robotNamespace>/drone2/</robotNamespace>
+      </plugin>
+      <plugin name='ft_sensor' filename='libgazebo_ros_ft_sensor.so'>
+        <updateRate>10.0</updateRate>
+        <topicName>FL_joint_sensor</topicName>
+        <jointName>FL_joint_2</jointName>
+        <robotNamespace>/drone2/</robotNamespace>
+      </plugin>
+      <static>0</static>
+      <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+        <robotNamespace>drone2</robotNamespace>
+      </plugin>
+      <pose>-1 0 0 0 -0 0</pose>
+    </model>
+    <model name='drone1'>
+      <link name='base_link_1'>
+        <inertial>
+          <pose>-8.8e-05 -3e-06 -0.010505 0 -0 0</pose>
+          <mass>0.0255148</mass>
+          <inertia>
+            <ixx>6.17281e-06</ixx>
+            <ixy>4.66738e-10</ixy>
+            <ixz>3.57375e-08</ixz>
+            <iyy>6.29242e-06</iyy>
+            <iyz>-7.10148e-10</iyz>
+            <izz>1.10885e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='base_link_1_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/base_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_link_1_fixed_joint_lump__camera_link_1_collision_1'>
+          <pose>0.019443 0 -0.010256 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/camera_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_link_1_fixed_joint_lump__pcb_link_1_collision_2'>
+          <pose>0.017473 -0.005236 -0.007754 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/pcb_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_link_1_fixed_joint_lump__pcb_plate_link_1_collision_3'>
+          <pose>0.017473 -0.005236 -0.007754 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/pcb_plate_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='base_link_1_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/base_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/White</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_link_1_fixed_joint_lump__camera_link_1_visual_1'>
+          <pose>0.019443 0 -0.010256 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/camera_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_link_1_fixed_joint_lump__pcb_link_1_visual_2'>
+          <pose>0.017473 -0.005236 -0.007754 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/pcb_link_visual.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Yellow</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_link_1_fixed_joint_lump__pcb_plate_link_1_visual_3'>
+          <pose>0.017473 -0.005236 -0.007754 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/pcb_plate_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Blue</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <velocity_decay/>
+        <sensor name='camera1' type='camera'>
+          <update_rate>20</update_rate>
+          <camera name='head'>
+            <horizontal_fov>1.39626</horizontal_fov>
+            <image>
+              <width>800</width>
+              <height>800</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.02</near>
+              <far>300</far>
+            </clip>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.007</stddev>
+            </noise>
+          </camera>
+          <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>0.0</updateRate>
+            <cameraName>camera1</cameraName>
+            <imageTopicName>image_raw</imageTopicName>
+            <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+            <frameName>camera_link</frameName>
+            <hackBaseline>0.07</hackBaseline>
+            <distortionK1>0.0</distortionK1>
+            <distortionK2>0.0</distortionK2>
+            <distortionK3>0.0</distortionK3>
+            <distortionT1>0.0</distortionT1>
+            <distortionT2>0.0</distortionT2>
+            <robotNamespace>/drone1/</robotNamespace>
+          </plugin>
+          <pose>0.019443 0 -0.010256 0 -0 0</pose>
+        </sensor>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <sensor name='imu_sensor' type='imu'>
+          <always_on>1</always_on>
+          <update_rate>100</update_rate>
+          <visualize>1</visualize>
+          <topic>__default_topic__</topic>
+          <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+            <topicName>imu</topicName>
+            <bodyName>pcb_plate_link</bodyName>
+            <updateRateHZ>10.0</updateRateHZ>
+            <gaussianNoise>0.0</gaussianNoise>
+            <xyzOffset>0 0 0</xyzOffset>
+            <rpyOffset>0 0 0</rpyOffset>
+            <frameName>imu_link</frameName>
+            <initialOrientationAsReference>0</initialOrientationAsReference>
+            <robotNamespace>/drone1/</robotNamespace>
+          </plugin>
+          <pose>0.017473 -0.005236 -0.007754 0 -0 0</pose>
+          <imu/>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='BL_joint_1' type='revolute'>
+        <pose relative_to='base_link_1'>-0.022456 0.023302 -0.005733 0 -0 0</pose>
+        <parent>base_link_1</parent>
+        <child>BL_link_1</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+        <physics>
+          <provide_feedback>1</provide_feedback>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <provide_feedback>1</provide_feedback>
+          </ode>
+        </physics>
+      </joint>
+      <link name='BL_link_1'>
+        <pose relative_to='BL_joint_1'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>2e-06 -1e-06 0.003236 0 -0 0</pose>
+          <mass>0.00017076</mass>
+          <inertia>
+            <ixx>4.6765e-09</ixx>
+            <ixy>2.1871e-12</ixy>
+            <ixz>2.0463e-13</ixz>
+            <iyy>4.6749e-09</iyy>
+            <iyz>1.2035e-12</iyz>
+            <izz>7.4744e-09</izz>
+          </inertia>
+        </inertial>
+        <collision name='BL_link_1_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/BL_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='BL_link_1_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/BL_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='BR_joint_1' type='revolute'>
+        <pose relative_to='base_link_1'>-0.022456 -0.02329 -0.005753 0 -0 0</pose>
+        <parent>base_link_1</parent>
+        <child>BR_link_1</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+        <physics>
+          <provide_feedback>1</provide_feedback>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <provide_feedback>1</provide_feedback>
+          </ode>
+        </physics>
+      </joint>
+      <link name='BR_link_1'>
+        <pose relative_to='BR_joint_1'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0 -0 0.003272 0 -0 0</pose>
+          <mass>0.00018062</mass>
+          <inertia>
+            <ixx>5.31752e-09</ixx>
+            <ixy>-9.13134e-15</ixy>
+            <ixz>8.05002e-16</ixz>
+            <iyy>5.31755e-09</iyy>
+            <iyz>1.22536e-14</iyz>
+            <izz>8.76726e-09</izz>
+          </inertia>
+        </inertial>
+        <collision name='BR_link_1_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/BR_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='BR_link_1_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/BR_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Green</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='FL_joint_1' type='revolute'>
+        <pose relative_to='base_link_1'>0.022469 0.023302 -0.005537 0 -0 0</pose>
+        <parent>base_link_1</parent>
+        <child>FL_link_1</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+        <physics>
+          <provide_feedback>1</provide_feedback>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <provide_feedback>1</provide_feedback>
+          </ode>
+        </physics>
+      </joint>
+      <link name='FL_link_1'>
+        <pose relative_to='FL_joint_1'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0 -0 0.003272 0 -0 0</pose>
+          <mass>0.00018062</mass>
+          <inertia>
+            <ixx>5.31748e-09</ixx>
+            <ixy>-9.62023e-15</ixy>
+            <ixz>-5.75246e-15</ixz>
+            <iyy>5.31752e-09</iyy>
+            <iyz>1.16455e-14</iyz>
+            <izz>8.7672e-09</izz>
+          </inertia>
+        </inertial>
+        <collision name='FL_link_1_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/FL_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='FL_link_1_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/FL_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Green</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='FR_joint_1' type='revolute'>
+        <pose relative_to='base_link_1'>0.022469 -0.02329 -0.005385 0 -0 0.079117</pose>
+        <parent>base_link_1</parent>
+        <child>FR_link_1</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+        <physics>
+          <provide_feedback>1</provide_feedback>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <provide_feedback>1</provide_feedback>
+          </ode>
+        </physics>
+      </joint>
+      <link name='FR_link_1'>
+        <pose relative_to='FR_joint_1'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>2e-06 -1e-06 0.003236 0 -0 0</pose>
+          <mass>0.000170762</mass>
+          <inertia>
+            <ixx>4.67644e-09</ixx>
+            <ixy>2.19394e-12</ixy>
+            <ixz>2.02296e-13</ixz>
+            <iyy>4.67485e-09</iyy>
+            <iyz>1.20317e-12</iyz>
+            <izz>7.47437e-09</izz>
+          </inertia>
+        </inertial>
+        <collision name='FR_link_1_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/FR_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='FR_link_1_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/yuxi/catkin_ws/src/espdrone/espdrone_driver/meshes/FR_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <plugin name='imu_plugin' filename='libgazebo_ros_imu.so'>
+        <alwaysOn>1</alwaysOn>
+        <bodyName>imu</bodyName>
+        <topicName>espdrone_imu</topicName>
+        <serviceName>imu_service</serviceName>
+        <gaussianNoise>0.0</gaussianNoise>
+        <updateRate>20.0</updateRate>
+        <robotNamespace>/drone1/</robotNamespace>
+      </plugin>
+      <plugin name='FL_lift_1' filename='libLiftDragPlugin.so'>
+        <a0>0.1</a0>
+        <cla>0.1</cla>
+        <cda>0.01</cda>
+        <cma>0.0</cma>
+        <alpha_stall>0.2</alpha_stall>
+        <cla_stall>-0.2</cla_stall>
+        <cda_stall>1.0</cda_stall>
+        <cma_stall>0.0</cma_stall>
+        <cp>0 0.5 0</cp>
+        <area>1e-3</area>
+        <air_density>1.2041</air_density>
+        <forward>1 0 0</forward>
+        <upward>0 0 1</upward>
+        <link_name>FL_link_1</link_name>
+        <control_joint>FL_joint_1</control_joint>
+        <robotNamespace>/drone1/</robotNamespace>
+      </plugin>
+      <plugin name='FR_lift_1' filename='libLiftDragPlugin.so'>
+        <a0>0.1</a0>
+        <cla>0.1</cla>
+        <cda>0.01</cda>
+        <cma>0.0</cma>
+        <alpha_stall>0.2</alpha_stall>
+        <cla_stall>-0.2</cla_stall>
+        <cda_stall>1.0</cda_stall>
+        <cma_stall>0.0</cma_stall>
+        <cp>0 0.5 0</cp>
+        <area>1e-3</area>
+        <air_density>1.2041</air_density>
+        <forward>1 0 0</forward>
+        <upward>0 0 -1</upward>
+        <link_name>FR_link_1</link_name>
+        <control_joint>FR_joint_1</control_joint>
+        <robotNamespace>/drone1/</robotNamespace>
+      </plugin>
+      <plugin name='BL_lift_1' filename='libLiftDragPlugin.so'>
+        <a0>0.1</a0>
+        <cla>0.1</cla>
+        <cda>0.01</cda>
+        <cma>0.0</cma>
+        <alpha_stall>0.2</alpha_stall>
+        <cla_stall>-0.2</cla_stall>
+        <cda_stall>1.0</cda_stall>
+        <cma_stall>0.0</cma_stall>
+        <cp>0 0.5 0</cp>
+        <area>1e-3</area>
+        <air_density>1.2041</air_density>
+        <forward>1 0 0</forward>
+        <upward>0 0 1</upward>
+        <link_name>BL_link_1</link_name>
+        <control_joint>BL_joint_1</control_joint>
+        <robotNamespace>/drone1/</robotNamespace>
+      </plugin>
+      <plugin name='BR_lift_1' filename='libLiftDragPlugin.so'>
+        <a0>0.1</a0>
+        <cla>0.1</cla>
+        <cda>0.01</cda>
+        <cma>0.0</cma>
+        <alpha_stall>0.2</alpha_stall>
+        <cla_stall>-0.2</cla_stall>
+        <cda_stall>1.0</cda_stall>
+        <cma_stall>0.0</cma_stall>
+        <cp>0 0.5 0</cp>
+        <area>1e-3</area>
+        <air_density>1.2041</air_density>
+        <forward>1 0 0</forward>
+        <upward>0 0 1</upward>
+        <link_name>BR_link_1</link_name>
+        <control_joint>BR_joint_1</control_joint>
+        <robotNamespace>/drone1/</robotNamespace>
+      </plugin>
+      <plugin name='ft_sensor' filename='libgazebo_ros_ft_sensor.so'>
+        <updateRate>10.0</updateRate>
+        <topicName>BR_joint_sensor</topicName>
+        <jointName>BR_joint_1</jointName>
+        <robotNamespace>/drone1/</robotNamespace>
+      </plugin>
+      <plugin name='ft_sensor' filename='libgazebo_ros_ft_sensor.so'>
+        <updateRate>10.0</updateRate>
+        <topicName>BL_joint_sensor</topicName>
+        <jointName>BL_joint_1</jointName>
+        <robotNamespace>/drone1/</robotNamespace>
+      </plugin>
+      <plugin name='ft_sensor' filename='libgazebo_ros_ft_sensor.so'>
+        <updateRate>10.0</updateRate>
+        <topicName>FR_joint_sensor</topicName>
+        <jointName>FR_joint_1</jointName>
+        <robotNamespace>/drone1/</robotNamespace>
+      </plugin>
+      <plugin name='ft_sensor' filename='libgazebo_ros_ft_sensor.so'>
+        <updateRate>10.0</updateRate>
+        <topicName>FL_joint_sensor</topicName>
+        <jointName>FL_joint_1</jointName>
+        <robotNamespace>/drone1/</robotNamespace>
+      </plugin>
+      <static>0</static>
+      <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+        <robotNamespace>drone1</robotNamespace>
+      </plugin>
+      <pose>-0.5 0 0 0 -0 0</pose>
+    </model>
   </world>
 </sdf>
