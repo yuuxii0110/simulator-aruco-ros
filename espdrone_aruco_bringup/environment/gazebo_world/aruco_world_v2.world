@@ -1094,10 +1094,10 @@
       <pose>1.70199 -1.78543 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>807 945000000</sim_time>
-      <real_time>34 393150506</real_time>
-      <wall_time>1634704393 689083587</wall_time>
-      <iterations>17819</iterations>
+      <sim_time>903 993000000</sim_time>
+      <real_time>190 294663783</real_time>
+      <wall_time>1635947598 417038691</wall_time>
+      <iterations>96048</iterations>
       <model name='aruco_visual_marker_0'>
         <pose>1.5 -1.5 1 -0.000398 -1.57 0</pose>
         <scale>1 1 1</scale>
@@ -1226,5 +1226,26 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='ground_plane'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-7.26924 0.464067 2.83235 0 0.271642 -0.031808</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
   </world>
 </sdf>
